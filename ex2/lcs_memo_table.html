@@ -1,0 +1,24 @@
+
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <style>
+                body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; direction: rtl; padding: 20px; }
+                table { border-collapse: collapse; margin-top: 20px; background-color: white; }
+                th, td { border: 1px solid #444; padding: 12px; text-align: center; min-width: 100px; }
+                th { background-color: #f8f9fa; }
+                .header-cell { background-color: #e9ecef; font-weight: bold; }
+                .order { color: #007bff; font-size: 0.85em; font-weight: bold; display: block; margin-bottom: 4px; }
+                .lcs { color: #28a745; font-family: monospace; font-size: 1.1em; }
+                .method { color: #6c757d; font-size: 0.75em; display: block; margin-top: 4px; }
+                .match { background-color: #d4edda; }
+            </style>
+        </head>
+        <body>
+            <h2>טבלת מעקב LCS (Memoization)</h2>
+            <p>מחרוזת X: <b>ABC</b> (שורות)</p>
+            <p>מחרוזת Y: <b>BDC</b> (עמודות)</p>
+            <table>
+                <tr>
+                    <th></th><th>""</th>
+        <th>B</th><th>D</th><th>C</th></tr><tr><td class='header-cell'>""</td><td class=''><span class='lcs'>''</span><br><span class='method'>-</span></td><td class=''><span class='order'>#3</span><span class='lcs'>''</span><br><span class='method'>Base Case</span></td><td class=''><span class='order'>#5</span><span class='lcs'>''</span><br><span class='method'>Base Case</span></td><td class=''><span class='lcs'>''</span><br><span class='method'>-</span></td></tr><tr><td class='header-cell'>A</td><td class=''><span class='order'>#1</span><span class='lcs'>''</span><br><span class='method'>Base Case</span></td><td class=''><span class='order'>#4</span><span class='lcs'>''</span><br><span class='method'>From Top</span></td><td class=''><span class='order'>#6</span><span class='lcs'>''</span><br><span class='method'>From Top</span></td><td class=''><span class='lcs'>''</span><br><span class='method'>-</span></td></tr><tr><td class='header-cell'>B</td><td class=''><span class='lcs'>''</span><br><span class='method'>-</span></td><td class='match'><span class='order'>#2</span><span class='lcs'>'B'</span><br><span class='method'>Match ('B')</span></td><td class=''><span class='order'>#7</span><span class='lcs'>'B'</span><br><span class='method'>From Left</span></td><td class=''><span class='lcs'>''</span><br><span class='method'>-</span></td></tr><tr><td class='header-cell'>C</td><td class=''><span class='lcs'>''</span><br><span class='method'>-</span></td><td class=''><span class='lcs'>''</span><br><span class='method'>-</span></td><td class=''><span class='lcs'>''</span><br><span class='method'>-</span></td><td class='match'><span class='order'>#8</span><span class='lcs'>'BC'</span><br><span class='method'>Match ('C')</span></td></tr></table></body></html>
