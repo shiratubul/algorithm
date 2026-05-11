@@ -1,0 +1,8 @@
+<table border='1' style='border-collapse: collapse'>
+<tr><th></th><th>A1: 30x20</th><th>A2: 20x5</th><th>A3: 5x15</th><th>A4: 15x20</th><th>A5: 20x25</th></tr>
+<tr><th>A1: 30x20</th><td></td><td>ops: A1 x A2<br>cost: 3000<br>optimized: A1xA2</td><td>ops: A1 .. A3<br>cost: 5250<br>optimized: ((A1xA2)xA3)</td><td>ops: A1 .. A4</td><td>ops: A1 .. A5</td></tr>
+<tr><th>A2: 20x5</th><td></td><td></td><td>ops: A2 x A3<br>cost: 1500<br>optimized: A2xA3</td><td>ops: A2 .. A4<br>cost: 3500<br>optimized: (A2x(A3xA4))</td><td>ops: A2 .. A5</td></tr>
+<tr><th>A3: 5x15</th><td></td><td></td><td></td><td>ops: A3 x A4<br>cost: 1500<br>optimized: A3xA4</td><td>ops: A3 .. A5<br>cost: 4000<br>optimized: ((A3xA4)xA5)</td></tr>
+<tr><th>A4: 15x20</th><td></td><td></td><td></td><td></td><td>ops: A4 x A5<br>cost: 7500<br>optimized: A4xA5</td></tr>
+<tr><th>A5: 20x25</th><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
